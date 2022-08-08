@@ -1,0 +1,64 @@
+POST http://localhost:8080/game HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mastermind",
+    "pieces": {
+        "decoding_board": {
+            "total_count": 1
+        },
+        "pegs": {
+            "total_count": 102,
+            "types": [
+                {
+                    "type": "code",
+                    "count": 72
+                },
+                {
+                    "type": "key",
+                    "count": 30
+                }
+            ]
+        },
+        "rulebook": {
+            "total_count": 1,
+            "file": "rulebook-ultimate-mastermind.pdf"
+        }
+    }
+}
+
+
+###
+GET http://localhost:8080/game/ccd469game HTTP/1.1
+Content-Type: application/json
+
+
+###
+PUT http://localhost:8080/game/993588game HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mastermind",
+    "pieces": {
+        "decoding_board": {
+            "total_count": 1
+        },
+        "pegs": {
+            "total_count": 102,
+            "types": [
+                {
+                    "type": "code",
+                    "count": 99
+                },
+                {
+                    "type": "key",
+                    "count": 69
+                }
+            ]
+        },
+        "rulebook": {
+            "total_count": 1,
+            "file": "rulebook-ultimate-mastermind.pdf"
+        }
+    }
+}
